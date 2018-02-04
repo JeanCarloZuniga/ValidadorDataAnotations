@@ -1,0 +1,8 @@
+c:\users\inframaps\documents\visual studio 2012\Projects\Validaciones\borrame\bin\borrame.dll
+c:\users\inframaps\documents\visual studio 2012\Projects\Validaciones\borrame\bin\borrame.pdb
+c:\users\inframaps\documents\visual studio 2012\Projects\Validaciones\borrame\bin\borrame.xml
+c:\users\inframaps\documents\visual studio 2012\Projects\Validaciones\borrame\obj\Debug\borrame.Resources.resources
+c:\users\inframaps\documents\visual studio 2012\Projects\Validaciones\borrame\obj\Debug\borrame.vbproj.GenerateResource.Cache
+c:\users\inframaps\documents\visual studio 2012\Projects\Validaciones\borrame\obj\Debug\borrame.dll
+c:\users\inframaps\documents\visual studio 2012\Projects\Validaciones\borrame\obj\Debug\borrame.xml
+c:\users\inframaps\documents\visual studio 2012\Projects\Validaciones\borrame\obj\Debug\borrame.pdb
