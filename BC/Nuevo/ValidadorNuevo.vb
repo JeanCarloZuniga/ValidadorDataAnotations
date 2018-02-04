@@ -5,11 +5,16 @@ Public Class ValidadorNuevo
 
     Dim diccionario As List(Of List(Of String))
     Dim ValidadorCampos As New ValidadorDeCamposNuevo
+    Public Property elPasoUno As Integer
+    Public Property elPasoDos As Integer
 
     Public Sub New()
         diccionario = New List(Of List(Of String))
+        diccionario.Add(New List(Of String)(New String() {""}))
         diccionario.Add(New List(Of String)(New String() {"NombreDelCarro", "AnnoCreacion"}))
         diccionario.Add(New List(Of String)(New String() {"CantidadDeRuedas", "PorcentajeQueMeAlcanza"}))
+        elPasoDos = 2
+        elPasoUno = 1
     End Sub
 
     Public Function ValidaElModelo(modelo As Carro, elPaso As Integer) As List(Of ManejadorDeExcepciones)
@@ -26,9 +31,9 @@ Public Class ValidadorNuevo
     Public Function ValidarCasosEspeciales(elCarro As BC.Carro, elPaso As Integer) As List(Of ManejadorDeExcepciones)
         Dim laListaDeContenedores As New List(Of ManejadorDeExcepciones)
         Select Case elPaso
-            Case 0
+            Case elPasoUno
                 Return laListaDeContenedores
-            Case 1
+            Case elPasoDos
                 laListaDeContenedores.Add(ValidadorCampos.LaListaDeRuedasCumpleReglaExtranna(elCarro.CantidadDeRuedas, elCarro.AnnoCreacion))
         End Select
 

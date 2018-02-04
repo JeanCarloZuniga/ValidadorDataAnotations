@@ -51,11 +51,8 @@
         Dim elValidadorDelBC As New BC.ValidadorNuevo
         Dim laListaDeErrores As New List(Of BC.ManejadorDeExcepciones)
 
-        Dim elPrimerPaso As Integer = 0
-        Dim elSegundoPaso As Integer = 1
-
-        laListaDeErrores.AddRange(elValidadorDelBC.ValidaElModelo(modelo, elPrimerPaso))
-        laListaDeErrores.AddRange(elValidadorDelBC.ValidaElModelo(modelo, elSegundoPaso))
+        laListaDeErrores.AddRange(elValidadorDelBC.ValidaElModelo(modelo, elValidadorDelBC.elPasoUno))
+        laListaDeErrores.AddRange(elValidadorDelBC.ValidaElModelo(modelo, elValidadorDelBC.elPasoDos))
 
         Return laListaDeErrores
     End Function
